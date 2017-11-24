@@ -39,6 +39,7 @@ export function createControllerMesh(color: string = '#fff') {
   let beamGeom = beamGeomCache;
   if (!beamGeom) {
     beamGeom = new THREE.Geometry();
+    // antlai: start changes
     beamGeom.vertices.push(
       new THREE.Vector3(-0.005, 0.005, 0),
       new THREE.Vector3(0.005, 0.005, 0),
@@ -50,6 +51,7 @@ export function createControllerMesh(color: string = '#fff') {
       new THREE.Vector3(0.005, -0.005, -3),
       new THREE.Vector3(-0.005, -0.005, -3),
     );
+    // antlai: end changes
     beamGeom.faces.push(
       new THREE.Face3(0, 1, 3),
       new THREE.Face3(1, 2, 3),

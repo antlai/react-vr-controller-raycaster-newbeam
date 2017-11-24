@@ -1,3 +1,8 @@
+original code in https://github.com/facebook/react-vr.git
+
+Modified to improve beam accuracy by antlai (see `createControllerMesh()` in
+`ControllerRenderer.js`)
+
 # 3dof / 6dof Controller Raycaster for React VR
 
 This package allows you to connect external controllers to your React VR
